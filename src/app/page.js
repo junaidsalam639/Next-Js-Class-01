@@ -3,21 +3,21 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <h1>Hello</h1>
       <div>
         <Link href={'/check'}>
-        <button>Home</button>
+        <button className='py-2 px-3 my-3 mx-3 bg-green-300 text-blue-400 font-bold border-4'>Home</button>
         </Link>
         <Link href={'/about'}>
-        <button>About</button>
+        <button className='py-2 px-3 my-3 mx-3 bg-green-300 text-blue-400 font-bold border-4'>About</button>
         </Link>
         <Link href={'/contact'}>
-        <button>Contact</button>
+        <button className='py-2 px-3 my-3 mx-3 bg-green-300 text-blue-400 font-bold border-4'>Contact</button>
         </Link>
         <Link href={'/blogs'}>
-        <button>Blog</button>
+        <button className='py-2 px-3 my-3 mx-3 bg-green-300 text-blue-400 font-bold border-4'>Blog</button>
         </Link>
       </div>
     </>
   )
 }
+// https://nerdcave.com/tailwind-cheat-sheet
