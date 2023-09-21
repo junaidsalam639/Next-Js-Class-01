@@ -1,10 +1,14 @@
 'use client'
 import { blog } from '../../../public/blog_detail/page'
+import { useRouter } from 'next/navigation'
 
 const page = () => {
+    const router = useRouter();
+
     const userData = (e) => {
-        console.log(e);
-        
+        const copy = [...blog]
+        console.log(copy[e]);
+        router.push('/id')
     }
     return (
         <div>
@@ -19,7 +23,7 @@ const page = () => {
                                     <h5 className="card-title">Name : {user.name}<span> {user.issueDate}</span></h5>
                                     <h6>Class : {user.class}</h6>
                                     <h6>Timing : {user.timing}</h6>
-                                    <button className='rounded-md py-2 px-3 mt-1 bg-blue-100 hover:bg-blue-200' onClick={() => userData(index)}>User_Data</button>
+                                    <button className='rounded-md py-2 px-3 mt-1 shadow-lg border-2' onClick={() => userData(index)}>User_Detail</button>
                                 </div>
                             </div>
                         )
