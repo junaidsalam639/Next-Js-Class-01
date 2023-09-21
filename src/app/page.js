@@ -1,13 +1,11 @@
 import Link from 'next/link'
-// import { useRouter } from 'next/router/navigation'
 
 export default function Home() {
-  // const router = useRouter();
   return (
     <>
       <h1>Hello</h1>
       <div>
-        <Link href={'/home'}>
+        <Link href={'/check'}>
         <button>Home</button>
         </Link>
         <Link href={'/about'}>
@@ -16,7 +14,7 @@ export default function Home() {
         <Link href={'/contact'}>
         <button>Contact</button>
         </Link>
-        <Link href={'/blog'}>
+        <Link href={'/blogs'}>
         <button>Blog</button>
         </Link>
       </div>
