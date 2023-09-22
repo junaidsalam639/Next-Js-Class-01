@@ -1,5 +1,5 @@
 'use client'
-
+import '../blogs.css'
 export default function page({ params }) {
   let name = localStorage.getItem('name');
   let class1 = localStorage.getItem('class');
@@ -9,10 +9,10 @@ export default function page({ params }) {
   console.log(name, class1, timing, image, detail);
   return (
     <div>
-      <h1>Id : {params.id}</h1>
+      {/* <h1>Id : {params.id}</h1> */}
           <div className='flex justify-around items-center flex-wrap w-100'>
-            <div className="card flex flex-col justify-center mt-5 shadow-lg p-3 rounded-md" style={{ width: '100%' }}>
-              <img className="card-img-top rounded-lg" src={image} alt="Card image cap" style={{ width: '100%', height: '360px'}} />
+            <div className="mx-auto container card flex flex-col justify-center mt-5 shadow-lg p-4 rounded-md" style={{ width: '70%' }}>
+              <img className="card-img-top rounded-lg" src={image} alt="Card image cap" style={{ width: '100%', height: '400px'}} />
               <div className="card-body pt-5">
                 <h5 className="card-title"><b>Name : </b> {name}<span></span></h5>
                 <h6><b>Class</b> : {class1}</h6>
