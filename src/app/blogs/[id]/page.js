@@ -8,17 +8,16 @@ export default function page({ params }) {
   let detail = localStorage.getItem('detail');
   console.log(name, class1, timing, image, detail);
   return (
-    <div>
-      {/* <h1>Id : {params.id}</h1> */}
-          <div className='flex justify-around items-center flex-wrap w-100'>
-            <div className="mx-auto container card flex flex-col justify-center mt-5 shadow-lg p-4 rounded-md" style={{ width: '70%' }}>
-              <img className="card-img-top rounded-lg" src={image} alt="Card image cap" style={{ width: '100%', height: '400px'}} />
+    <div className='flex justify-center items-center'>
+          <div className='w-96'>
+            <div className="mx-auto container card flex flex-col justify-center shadow-lg p-4 rounded-md" style={{ width: '100%' }}>
+         <h1 className='text-xl text-center font-bold p-2'>User_Detail : {params.id}</h1>
+              <img className="card-img-top rounded-lg" src={image} alt="Card image cap" style={{ width: '100%', height: '250px'}} />
               <div className="card-body pt-5">
                 <h5 className="card-title"><b>Name : </b> {name}<span></span></h5>
                 <h6><b>Class</b> : {class1}</h6>
                 <h6><b>Timing</b> : {timing}</h6>
                 <h6><b>Detail</b> : {detail}</h6>
-                <button className='rounded-md py-2 px-3 mt-1 shadow-lg border-2'>User_Detail</button>
               </div>
             </div>
           </div>
