@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import '../blogs.css'
+
 export default function page({ params }) {
   let name = localStorage.getItem('name');
   let class1 = localStorage.getItem('class');

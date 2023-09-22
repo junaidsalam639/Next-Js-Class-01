@@ -3,7 +3,7 @@ import { blog } from '../../../public/blog_detail/page'
 import { useRouter } from 'next/navigation'
 import './blogs.css'
 
-const page = () => {
+const Page = () => {
     const router = useRouter();
 
     const userData = (e) => {
@@ -40,4 +40,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
