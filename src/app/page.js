@@ -11,7 +11,7 @@ export default function Home() {
   }
   return (
     <>
-      <div>
+      <div className='bg-indigo-900 text-center fixed w-full'>
         {/* <Page /> */}
         <Link href={'/check'}>
         <button className='rounded-md py-2 px-3 my-3 mx-3 bg-indigo-100 hover:bg-indigo-200 hover:transition-all font-bold text-indigo-400 border-indigo-800'>Home</button>
