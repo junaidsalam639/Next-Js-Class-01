@@ -14,15 +14,15 @@ export default function Home() {
       <div>
         {/* <Page /> */}
         <Link href={'/check'}>
-        <button className='rounded-md py-2 px-3 my-3 mx-3 bg-indigo-100 hover:bg-indigo-200 hover:transition-all font-bold border-indigo-800'>Home</button>
+        <button className='rounded-md py-2 px-3 my-3 mx-3 bg-indigo-100 hover:bg-indigo-200 hover:transition-all font-bold text-indigo-400 border-indigo-800'>Home</button>
         </Link>
         <Link href={'/about'}>
-        <button className='rounded-md py-2 px-3 my-3 mx-3 bg-indigo-100 hover:bg-indigo-200 hover:transition-all font-bold border-indigo-800'>About</button>
+        <button className='rounded-md py-2 px-3 my-3 mx-3 bg-indigo-100 hover:bg-indigo-200 hover:transition-all font-bold border-indigo-800 text-indigo-400'>About</button>
         </Link>
         <Link href={'/contact'}>
-        <button className='rounded-md py-2 px-3 my-3 mx-3 bg-indigo-100 hover:bg-indigo-200 hover:transition-all font-bold border-indigo-800'>Contact</button>
+        <button className='rounded-md py-2 px-3 my-3 mx-3 bg-indigo-100 hover:bg-indigo-200 hover:transition-all font-bold border-indigo-800 text-indigo-400'>Contact</button>
         </Link>
-        <button className='rounded-md py-2 px-3 my-3 mx-3 bg-indigo-100 hover:bg-indigo-200 hover:transition-all font-bold border-indigo-800' onClick={blog}>Blog</button>
+        <button className='rounded-md py-2 px-3 my-3 mx-3 bg-indigo-100 hover:bg-indigo-200 hover:transition-all font-bold border-indigo-800 text-indigo-400' onClick={blog}>Blog</button>
       </div>
     </>
   )
