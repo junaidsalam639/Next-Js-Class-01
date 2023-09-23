@@ -16,7 +16,7 @@ export default function page({ params }) {
       </Link>
       <div className='flex justify-center items-center'>
         <div className='w-96'>
-          <div className="mx-auto container card flex flex-col justify-center shadow-lg p-4 rounded-md" style={{ width: '100%' }}>
+          <div className="mx-auto container card flex flex-col justify-center shadow-md p-4 rounded-md" style={{ width: '100%' }}>
             <h1 className='text-xl text-center font-bold p-2'>User_Detail : {params.id}</h1>
             <img className="card-img-top rounded-lg" src={image} alt="Card image cap" style={{ width: '100%', height: '250px' }} />
             <div className="card-body pt-5">
