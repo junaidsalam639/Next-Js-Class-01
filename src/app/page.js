@@ -2,6 +2,8 @@
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import Page from './blogs/page';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function Home() {
   const router = useRouter();

@@ -23,7 +23,7 @@ const Page = () => {
                 {
                     blog.map((user , index) => {
                         return (
-                            <div key={index} className="card flex flex-col justify-center mt-5 shadow-lg p-3 rounded-md" style={{ width: '18rem' }}>
+                            <div key={index} className="card flex flex-col justify-center mt-5 shadow-lg p-3 rounded-md" style={{ width: '20rem', height:'25rem' }}>
                                 <img className="card-img-top rounded-lg" src={user.image} alt="Card image cap" style={{ width: '300px', height: '240px' }} />
                                 <div className="card-body pt-5">
                                     <h5 className="card-title"><b>Name : </b> {user.name}<span> {user.issueDate}</span></h5>
